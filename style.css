@@ -1,0 +1,60 @@
+body {
+    background: black;
+    color: deepskyblue;
+    overflow: hidden;
+}
+.controls {
+    position: absolute;
+    bottom: 10px;
+}
+#console {
+    max-width: 50%;
+    position: absolute;
+    bottom: 30px;
+    line-height: 1.5;
+}
+#console span {
+    animation: 2s type steps(60, end);
+    overflow: hidden;
+}
+@keyframes type {
+    from {width: 0;}
+}
+button {
+    cursor: pointer;
+    padding: 7px;
+    border: solid 1px deepskyblue;
+    border-radius: 2px;
+    background: 0;
+    color: deepskyblue;
+    -webkit-transition: all .1s;
+            transition: all .1s;
+}
+button:hover {
+    background: deepskyblue;
+    color: black;
+    -webkit-transition: all .1s;
+            transition: all .1s;
+}
+input[type="text"] {
+    padding: 8px;
+    color: deepskyblue;
+    border: 0;
+    background: 0;
+}
+input:focus, button:focus {
+    outline: 0;
+}
+.meters {
+    display: inline;
+}
+pre {
+    position: absolute;
+    right: 20px;
+}
+a {
+    color: darkcyan;
+}
+a:hover {
+    text-decoration: none;
+}
